@@ -169,6 +169,10 @@ body {
         line-height: 6px;
         text-align: center;
         margin-top: -15px;
+        .current {
+          opacity: 1;
+          zoom: 1;
+        }
       }
     }
 
