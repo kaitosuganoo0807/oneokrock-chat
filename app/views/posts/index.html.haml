@@ -1,0 +1,182 @@
+%header
+  .header_base
+    %h1
+      %img{:alt => "ONE OK ROCK", :src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/logo_top.png"}
+    %nav#glo_nav
+      %ul
+        %li.home_current
+          %a.home_btn{:href => ""}
+            %img.hf.on{:alt => "HOME", :src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/glo_home_on.png", :style => "position: absolute; opacity: 0; left: 43px; top: 0px; z-index: 0;"}/
+            %img.hf{:alt => "HOME", :src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/glo_home_off.png"}/
+        %li.news
+          %a.news_btn{:href => ""}
+            %img.hf.on{:alt => "NEWS", :src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/glo_news_on.png", :style => "position: absolute; opacity: 0; left: 180px; top: 0px; z-index: 0;"}/
+            %img.hf{:alt => "NEWS", :src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/glo_news_off.png"}/
+        %li.tour
+          %a.tour_btn{:href => ""}
+            %img.hf.on{:alt => "TOUR", :src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/glo_tour_on.png", :style => "position: absolute; opacity: 0; left: 0px; top: 0px; z-index: 0;"}/
+            %img.hf{:alt => "TOUR", :src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/glo_tour_off.png", :style => "opacity: 1;"}/
+        %li.about
+          %a.about_btn{:href => ""}
+            %img.hf.on{:alt => "ABOUT", :src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/glo_about_on.png", :style => "position: absolute; opacity: 0; left: 0px; top: 0px; z-index: 0;"}/
+            %img.hf{:alt => "ABOUT", :src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/glo_about_off.png", :style => "opacity: 1;"}/
+        %li.videos
+          %a.videos_btn{:href => ""}
+            %img.hf.on{:alt => "VIDEOS", :src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/glo_videos_on.png", :style => "position: absolute; opacity: 0; left: 0px; top: 0px; z-index: 0;"}/
+            %img.hf{:alt => "VIDEOS", :src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/glo_videos_off.png", :style => "opacity: 1;"}/
+        %li.music
+          %a.music_btn
+          =link_to "posts/music" do
+            %img.hf.on{:alt => "MUSIC", :src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/glo_music_on.png", :style => "position: absolute; opacity: 0; left: 0px; top: 0px; z-index: 0;"}/
+            %img.hf{:alt => "MUSIC", :src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/glo_music_off.png", :style => "opacity: 1;"}/
+        %li.store
+          %a.store_btn{:href => ""}
+            %img.hf.on{:alt => "STORE", :src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/glo_store_on.png", :style => "position: absolute; opacity: 0; left: 0px; top: 0px; z-index: 0;"}/
+            %img.hf{:alt => "STORE", :src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/glo_store_off.png"}/
+    .lang
+      %a.lang_btn
+        =link_to edit_user_path(current_user)do
+          Log in
+        %img.hf{:src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/sprite/caret-right.png"}/
+      .content_btn
+        =link_to "/tweets/new" do
+          Post
+
+        -# %i.icon_caret-right
+  -# .header_base
+  
+  .main_base
+    #main_banner
+      .control
+        %a.prev{:href => ""}
+          %img.h{:alt => "", :src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/main_arrow_left_off.gif"}/
+        %a.next{:href => "javascript: void(0);"}
+          %img.h{:alt => "", :src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/main_arrow_right_off.gif"}/
+      .banners
+        %ul.w
+          %li{:style => "left: -50px; opacity: 1; z-index: 0; display: block;"}
+            %a{:href => "http://www.oneokrock.com/jp/tour/"}
+              %img{:alt => "", :src => "http://www.oneokrock.com/wp-content/uploads/2019/07/144a49a6cc7000195d915675eaf7e159.jpg"}/
+          %li{:style => "left: -50px; opacity: 1; display: block; z-index: 0;"}
+            %a{:href => ""}
+              %img{:alt => "", :src => "http://www.oneokrock.com/wp-content/uploads/2019/06/8637badb4fd83b5352634d8bbb3e3c29.jpg"}/
+          %li{:style => "left: -50px; opacity: 1; display: block; z-index: 0;"}
+            %a{:href => "http://www.oneokrock.com/jp/news/"}
+              %img{:alt => "", :src => "http://www.oneokrock.com/wp-content/uploads/2018/11/cd05_banner3.jpg"}/
+        .shadow_top
+          %img{:alt => "", :src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/main_shadow_top.png"}/
+        .shadow_bottom
+          %img{:alt => "", :src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/main_shadow_bottom.png"}/
+      %ul.indicators
+        %li
+          %i
+        %li
+          %i
+        %li.current
+          %i
+      -#  main_banner
+    
+    .two_col
+      .main_col
+        #topics
+          %h2
+            %img{:alt => "TOPICS", :src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/h2_topics.png"}/
+          %ul.topic_list
+            %li
+              .image
+                %a{:href => "http://www.oneokrock.com/jp/news/2817"}
+                  %img{:alt => "topic_1", :src => "http://www.oneokrock.com/wp-content/uploads/2019/07/one-ok-rock_tour_0710v3-e1563508374628.jpg", :width => "180"}/
+              .description
+                %p.date
+                  2019.07.24
+                  %i.icon
+                %h3.title
+                  %a.w_o{:href => "http://www.oneokrock.com/jp/news/2817"} ONE OK ROCK 2019 - 2020 "Eye of the Storm" JAPAN TOUR (代々木・沖縄公演　追加)
+                .headline_color-mid
+                  【ONE OK ROCK 2019 – 2020 “Eye of the Storm” JAPAN TOUR】
+                  %span.color-accent_read_more
+                    %a.ul.color-accent{:href => "http://www.oneokrock.com/jp/news/2817"} ［READ MORE］
+            %li
+              .image
+                %a{:href => "http://www.oneokrock.com/jp/news/2801"}
+                  %img{:alt => "topic_1", :src => "http://www.oneokrock.com/wp-content/uploads/2019/06/mini_web_190618_oor_ambitions_jacket_fix-e1560850240767.jpg", :width => "180"}/
+              .description
+                %p.date
+                  2019.06.20
+                  %i.icon
+                %h3.title
+                  %a.w_o{:href => "http://www.oneokrock.com/jp/news/2801"} LIVE DVD&amp;Blu-ray "ONE OK ROCK 2018 AMBITIONS JAPAN DOME TOUR"
+                .headline_color-mid
+                  LIVE DVD&amp;Blu-ray “ONE OK ROCK 2018 AMBITIONS JAPAN DOME TOUR”
+                  %span.color-accent_read_more
+                    %a.ul.color-accent{:href => "http://www.oneokrock.com/jp/news/2801"} ［READ MORE］
+            %li
+              .image
+                %a{:href => "http://www.oneokrock.com/jp/news/2558"}
+                  %img{:alt => "topic_1", :src => "http://www.oneokrock.com/wp-content/uploads/2018/11/Eye-of-the-Storm_ASK_JK_small-e1542102816399.jpg", :width => "180"}/
+              .description
+                %p.date
+                  2018.11.23
+                  %i.icon
+                %h3.title
+                  %a.w_o{:href => "http://www.oneokrock.com/jp/news/2558"} アルバム  「Eye of the Storm」発売決定＆収録曲「Stand Out Fit In」が配信開始
+                .headline_color-mid
+                  ONE OK ROCK約2年ぶりとなるアルバム「Eye of the Storm」発売決定！
+                  %span.color-accent_read_more
+                    %a.ul.color-accent{:href => "http://www.oneokrock.com/jp/news/2801"} ［READ MORE］
+      -# .main_col
+      .sub_col
+        #sns
+          %ul.sns_list
+            %li
+              %a.o{:href => "https://twitter.com/ONEOKROCK_japan", :target => "_blank"}
+                %i.icon_twitter
+                  %img{:src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/sprite/twitter.png"}/
+            %li
+              %a.o{:href => "https://www.facebook.com/ONEOKROCK", :target => "_blank"}
+                %i.icon_facebook
+                  %img{:src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/sprite/facebook.png"}/
+            %li
+              %a.o{:href => "http://instagram.com/oneokrockofficial", :target => "_blank"}
+                %i.icon_instagram
+                  %img{:src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/sprite/instagram.png"}/
+            %li
+              %a.o{:href => "https://www.youtube.com/user/ONEOKROCKchannel", :target => "_blank"}
+                %i.icon_youtube
+                  %img{:src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/sprite/youtube.png"}/
+            %li
+              %a.o{:href => "http://smarturl.it/ONEOKROCK", :target => "_blank"}
+                %i.icon_itune
+                  %img{:src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/sprite/itune.png"}/
+            %li
+              %a.o{:href => "https://play.spotify.com/artist/7k73EtZwoPs516ZxE72KsO", :target => "_blank"}
+                %i.icon_spotify
+                  %img{:src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/sprite/spotify.png"}/
+        -# sns
+        #pickup_video
+          .youtube
+            %iframe{:allowfullscreen => "", :frameborder => "0", :height => "208", :src => "http://www.youtube.com/embed/uyaKoj7wABY/?wmode=transparent", :width => "369"}
+          %p.more
+            %a.o.inverse{:href => ""}
+              %img{:alt => "MORE VIDEOS", :src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/btn_more_videos.png"}/
+        -# pickup_video
+        #twitter_widget
+          %h2
+            %img{:alt => "TWITTER", :src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/h2_twitter.png"}/
+          %p.follow
+            %a.o{:href => "http://twitter.com/ONEOKROCK_japan", :target => "_blank"}
+              %img{:alt => "FOLLOW", :src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/btn_follow.png"}/
+        -# twitter_widget
+        #side_banners
+          %ul.banner_list
+            %li
+              %a.o{:href => "https://oneokrock-pf.com/", :target => "_blank"}
+                %img{:alt => "", :src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/side_banner/side_banner_1.png"}/
+            %li
+              %a.o{:href => "https://oneokrock-pf.com/", :target => "_blank"}
+                %img{:alt => "", :src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/side_banner/side_banner_2.png"}/
+        -# side_banners
+    %footer
+      .content_base
+        %p.copyright
+          %img{:alt => "copyright", :height => "8", :src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/copyright.png", :width => "179"}/

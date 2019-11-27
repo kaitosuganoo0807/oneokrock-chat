@@ -1,0 +1,29 @@
+body {
+  background: url(http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/bg.jpg) center top;
+  font-family: 'Hiragino Kaku Gothic ProN',sans-serif;
+  color: #ebebeb23;
+  line-height: 1.5;
+
+  header {
+    padding: 20px 0 0;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+
+    .header_base {
+      width: 1020px;
+      margin: 0 auto;
+      padding: 0 30px;
+      position: relative;
+
+      h1 {
+        padding-bottom: 24px;
+        h1 img {
+          background-image: url(http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/logo_top.png);
+          vertical-align: bottom;
+          background-size: cover;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,312 @@
+body {
+  background: url(http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/bg.jpg) center top;
+  font-family: 'Hiragino Kaku Gothic ProN',sans-serif;
+  color: #ebebeb23;
+  line-height: 1.5;
+
+  header {
+    padding: 20px 0 0;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+
+    .header_base {
+      width: 1020px;
+      margin: 0 auto;
+      padding: 0 30px;
+      position: relative;
+
+      h1 {
+        padding-bottom: 24px;
+        h1 img {
+          background-image: url(http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/logo_top.png);
+          vertical-align: bottom;
+          background-size: cover;
+        }
+      }
+
+      #glo_nav {
+        position: relative;
+        right: auto;
+        top: auto;
+        
+        ul {
+          margin-left: 43px;
+          display: flex;
+          .home_current {
+            margin-left: 0;
+            .home_btn {
+              transition: all ease-out 240ms;
+              cursor: pointer;
+              text-decoration: underline;
+            }
+          }
+
+          .news {
+            margin-left: 50px;
+            .news_btn {
+              transition: all ease-out 240ms;
+              color: #ebebeb;
+              text-decoration: none;
+            }
+          }
+
+          .tour {
+            margin-left: 50px;
+            .tour_btn {
+              transition: all ease-out 240ms;
+              color: #ebebeb;
+              text-decoration: none;
+            }
+          }
+
+          .about {
+            margin-left: 50px;
+            .about_btn {
+              transition: all ease-out 240ms;
+              color: #ebebeb;
+              text-decoration: none;
+            }
+          }
+
+          .videos {
+            margin-left: 50px;
+            .videos_btn {
+              transition: all ease-out 240ms;
+              color: #ebebeb;
+              text-decoration: none;
+            }
+          }
+
+          .music {
+            margin-left: 50px;
+            .music_btn {
+              transition: all ease-out 240ms;
+              color: #ebebeb;
+              text-decoration: none;
+            }
+          }
+
+          .store {
+            margin-left: 50px;
+            .store_btn {
+              transition: all ease-out 240ms;
+              color: #ebebeb;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+
+      .lang {
+        top: 0px;
+        right: 60px;
+        position: absolute;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        .lang_btn {
+          color: #ebebeb;
+          text-decoration: none;
+          .icon_caret-right {
+            // background-image: url(http://www.oneokrock.com/wp-content/themes/oor_pc/images/sprite/caret-right.png);
+            background-size: contain;
+            width: 14px;
+            height: 14px;
+            vertical-align: text-top;
+            color: #ebebeb;
+          }
+        }
+        .content_btn {
+          text-decoration: none;
+          color: #ebebeb;
+        }
+      }
+    }
+  }
+
+  .main_base {
+    width: 1020px;
+    margin: 0 auto;
+    padding: 0 30px;
+    position: relative;
+    #main_banner {
+      .prev {
+        left: -30px;
+        position: absolute;
+        top: 285px;
+        .h {
+          vertical-align: bottom;
+        }
+      }
+      .next {
+        right: -30px;
+        position: absolute;
+        top: 285px;
+      }
+
+      .banners {
+        width: 1020px;
+        height: 570px;
+        position: relative;
+        overflow: hidden;
+        .shadow_top {
+          top: 0;
+          left: 0;
+          position: absolute;
+          z-index: 8;
+        }
+        .shadow_bottom {
+          bottom: 0;
+          left: 0;
+          position: absolute;
+          z-index: 8;
+        }
+      }
+
+      .indicators {
+        position: relative;
+        z-index: 20;
+        line-height: 6px;
+        text-align: center;
+        margin-top: -15px;
+      }
+    }
+
+    .two_col {
+      padding-top: 15px;
+      padding-left: 30px;
+      padding-right: 30px;
+      display: flex;
+      .main_col {
+        width: 570px;
+        .topic_list li {
+          padding: 27px 0;
+          background: url(http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/border_left.png) no-repeat bottom center;
+          display: inline-block;
+          .image {
+            float: left;
+            width: 180px;
+          }
+          .description {
+            padding-left: 200px;
+            .date {
+              font-size: 12px;
+              color: #999999;
+              .icon {
+                display: inline-block;
+                zoom: 1;
+                width: 14px;
+                height: 14px;
+                line-height: 14px;
+                margin: 0;
+                padding: 0;
+                vertical-align: bottom;
+              }
+            }
+            .title {
+              padding-top: 5px;
+              font-size: 14px;
+              .w_o {
+                color: #ebebeb;
+                text-decoration: none;
+              }
+            }
+            .headline_color-mid {
+              font-size: 12px;
+              padding-top: 22px;
+              .color-accent_read_more {
+                font-size: 10px;
+                .ul.color-accent {
+                  text-decoration: none;
+                  color: #9774af;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .sub_col {
+        position: relative;
+        z-index: 100;
+        width: 360px;
+        // padding-top: 30px;
+        #sns {
+          padding-bottom: 15px;
+          background: url(http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/border_right.png) no-repeat bottom center;
+          position: relative;
+          height: 35px;
+          .sns_list li {
+            float: right;
+            padding-left: 15px;
+            .o {
+              opacity: 1;
+              .icon_twitter {
+                width: 24px;
+                height: 24px;
+              }
+              .icon_facebook {
+                width: 24px;
+                height: 24px;
+              }
+              .icon_instagram {
+                width: 24px;
+                height: 24px;
+              }
+              .icon_youtube {
+                width: 52px;
+                height: 22px;
+              }
+            }
+          }
+        }
+
+        #pickup_video {
+          padding: 15px 0 30px;
+          padding-left: 30px;
+          .more {
+            line-height: 11px;
+            text-align: right;
+            padding-top: 10px;
+          }
+        }
+
+        #twitter_widget {
+          position: relative;
+          padding-left: 30px;
+          .follow {
+            line-height: 25px;
+            position: absolute;
+            top: 5px;
+            right: 0;
+          }
+        }
+
+        .banner_list {
+          padding: 30px 0;
+          padding-left: 30px;
+        }
+      }
+    }
+
+    footer {
+      background-color: #fff;
+      text-align: center;
+      padding: 25px 0;
+      position: relative;
+      .content_base {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 30px;
+        position: relative;
+        .copyright {
+          line-height: 9px;
+        }
+      }
+    }
+  }
+}
+
+a {
+  color: #ebebeb;
+}
