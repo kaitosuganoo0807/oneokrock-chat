@@ -1,8 +1,12 @@
-body {
+html {
   background: url(http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/bg.jpg) center top;
+  height: 100%;
+}
+body {
   font-family: 'Hiragino Kaku Gothic ProN',sans-serif;
   color: #ebebeb23;
   line-height: 1.5;
+  height: 100%;
 
   header {
     padding: 20px 0 0;
@@ -213,16 +217,23 @@ body {
               .w_o {
                 color: #ebebeb;
                 text-decoration: none;
+                &:hover{
+                  color: lighten(gray,10%);
+                }
               }
             }
             .headline_color-mid {
               font-size: 12px;
               padding-top: 22px;
+              color: gray;
               .color-accent_read_more {
                 font-size: 10px;
                 .ul.color-accent {
                   text-decoration: none;
                   color: #9774af;
+                  &:hover{
+                    color: lighten(rgb(92, 72, 148),10%);
+                  }
                 }
               }
             }
@@ -292,26 +303,30 @@ body {
         }
       }
     }
+  }
+}
 
-    footer {
-      background-color: #fff;
-      text-align: center;
-      padding: 25px 0;
+  footer {
+    background-color: #fff;
+    text-align: center;
+    padding: 25px 0;
+    position: relative;
+    width: 100%;
+    .content_base {
+      // width: 100%;
+      margin: 0 auto;
+      padding: 0 30px;
       position: relative;
-      .content_base {
-        width: 100%;
-        margin: 0 auto;
-        padding: 0 30px;
-        position: relative;
-        .copyright {
-          line-height: 9px;
-        }
+      .copyright {
+        line-height: 9px;
       }
     }
   }
-}
 
 a {
   color: #ebebeb;
   text-decoration: none;
+  &:hover{
+    color: lighten(gray,10%);
+  }
 }

@@ -1,6 +1,15 @@
-.contents.row
-  - @tweets.each do |tweet|
-    .content_post{:style => "background-image: url(#{tweet.image});"}
-      = simple_format(tweet.text)
-      %span.name
-        = tweet.name
+%header
+  .header_base
+    %h1
+      = link_to image_tag("http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/logo_top.png"), "/"
+      .content_btn_post
+        =link_to new_tweet_path(@tweet) do
+          New post
+        %img.hf{:src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/sprite/caret-right.png"}/
+  .contents.row
+    - @tweets.each do |tweet|
+      .content_post{:style => "background-image: url(#{tweet.image});"}
+        = simple_format(tweet.text)
+        %span.name
+          Contributor
+          = tweet.name

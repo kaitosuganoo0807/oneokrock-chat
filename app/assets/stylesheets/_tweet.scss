@@ -1,18 +1,91 @@
 .contents.row {
-  background: url(https://pbs.twimg.com/media/C-3CAaEXoAAhFzM.jpg);
+  // background: url(https://pbs.twimg.com/media/C-3CAaEXoAAhFzM.jpg);
   width: 100%;
-  margin: auto;
-  // margin-left: auto;
-  // margin-right: auto;
-  // margin-top: 0;
-  // margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
   max-width: 750px;
   height: 800px;
   .container {
     margin: 20px 0;
     padding: 30px;
-    box-shadow: 0 0 10px rgba(41,41,41,0.2);
+    box-shadow: 0 0 10px rgba(124, 16, 16, 0.2);
     box-sizing: border-box;
+    z-index: 3;
   }
 }
 
+div.content_post {
+  position: relative;
+  height: 400px;
+  color: #fff;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba($color:#292929, $alpha: 0.2);
+  p {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0 0 2px #000, 0 0 1px #000, 0 0 1px #000;
+  }
+  .name {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    font-size: 15px;
+    font-family: cursive;
+    text-shadow: 0 0 2px #000, 0 0 1px #000, 0 0 1px #000;
+  }
+}
+
+.contents.row_a {
+  background: url(https://pbs.twimg.com/media/C-3CAaEXoAAhFzM.jpg);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 750px;
+  height: 800px;
+  .container {
+    margin: 20px 0;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(124, 16, 16, 0.2);
+    box-sizing: border-box;
+    z-index: 3;
+  }
+}
+
+form {
+  h3 {
+    text-align: center;
+    font-size: 20px;
+    margin: 10px auto;
+    color: gray;
+    font-family: fantasy;
+  }
+  input,textarea {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 30px auto;
+    padding: 10px;
+    background-color: rgb(87, 82, 82);
+  }
+  input[type="submit"] {
+    background-color: gray;
+    border-radius: 20px;
+    color: black;
+    border: 0;
+    font-size: 18px;
+    font-family: cursive;
+    &:hover{
+      background-color: lighten(gray,10%);
+    }
+  }
+}
