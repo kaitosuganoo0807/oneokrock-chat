@@ -303,6 +303,17 @@ body {
         }
       }
     }
+    #return_top {
+      clear: both;
+      text-align: center;
+      padding: 75px 0 15px;
+      img {
+        vertical-align: bottom;
+        &:hover{
+          color: lighten(gray,10%);
+        }
+      }
+    }
   }
 }
 
@@ -326,6 +337,7 @@ body {
 a {
   color: #ebebeb;
   text-decoration: none;
+  // font-family: fantasy;
   &:hover{
     color: lighten(gray,10%);
   }

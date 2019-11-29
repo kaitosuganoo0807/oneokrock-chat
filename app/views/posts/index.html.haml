@@ -42,6 +42,10 @@
         =link_to tweets_path(current_user) do
           List of posts
         %img.hf{:src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/sprite/caret-right.png"}/
+      .content_btn
+        =link_to "/users/#{current_user.id}" do
+          My page
+        %img.hf{:src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/sprite/caret-right.png"}/
 
         -# %i.icon_caret-right
   -# .header_base
@@ -177,6 +181,9 @@
               %a.o{:href => "https://oneokrock-pf.com/", :target => "_blank"}
                 %img{:alt => "", :src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/side_banner/side_banner_2.png"}/
         -# side_banners
+    #return_top
+      %a.o{:href => "#"}
+        %img{:alt => "RETURN PAGE TOP", :src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/btn_return_top.png"}/
   %footer
     .content_base
       %p.copyright

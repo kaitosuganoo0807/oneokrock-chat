@@ -6,10 +6,25 @@
         =link_to new_tweet_path(@tweet) do
           New post
         %img.hf{:src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/sprite/caret-right.png"}/
+  -# = form_for (search_tweets_path), method: :get, class: "search-form" do |form|
+  -#   = form.text_field :keyword, placeholder: "投稿を検索する", class: "search-input"
+  -#   = form.submit "検索", class: "search-btn"
   .contents.row
     - @tweets.each do |tweet|
-      .content_post{:style => "background-image: url(#{tweet.image});"}
+      .content_post{style: "background-image: url(#{tweet.image});"}
+        .more
+          %span= image_tag 'arrow_top.png'
+          %ul.more_list
+            %li
+              = link_to 'Show', "/tweets/#{tweet.id}", method: :get
+            - if user_signed_in? && current_user.id == tweet.user_id 
+              %li
+                = link_to 'Edit', "/tweets/#{tweet.id}/edit", method: :get
+              %li
+                = link_to 'Destroy', "/tweets/#{tweet.id}", method: :delete
         = simple_format(tweet.text)
         %span.name
-          Contributor
-          = tweet.name
+          %a{href: "/users/#{tweet.user.id}"}
+            Contributor
+            = tweet.user.name
+    = paginate(@tweets)

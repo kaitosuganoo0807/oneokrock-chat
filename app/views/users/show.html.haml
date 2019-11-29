@@ -1,0 +1,11 @@
+%header
+  .header_base
+    %h1
+      = link_to image_tag("http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/logo_top.png"), "/"
+  .contents.row
+    %p
+      = @nickname
+    - @tweets.each do |tweet|
+      .content_post{:style => "background-image: url(#{tweet.image});"}
+        = simple_format(tweet.text)
+        %span.name= tweet.name
