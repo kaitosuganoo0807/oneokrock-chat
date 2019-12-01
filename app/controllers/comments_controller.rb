@@ -1,11 +1,14 @@
 class CommentsController < ApplicationController
   def create
-    comment = Comment.create(comment_params)
-    redirect_to "/tweets/#{comment.tweet.id}"
+    @comment = Comment.create(comment_params)
+    respond_to do |format|
+      format.html {redirect_to "/tweets/#{comment.tweet.id}"}
+      format.json
+    end
   end
 
   private
   def comment_params
-    params.require(:comment).permit(:text).merge(user_id: current_user.id, tweet_id: params[:tweet_id])
+    params.require(:comments).permit(:text, :tweet_id).merge(user_id: current_user.id)
   end
 end

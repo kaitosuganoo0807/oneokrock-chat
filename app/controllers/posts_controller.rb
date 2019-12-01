@@ -5,4 +5,7 @@ class PostsController < ApplicationController
 
   def music
   end
+
+  def about
+  end
 end

@@ -31,6 +31,7 @@
 }
 
 div.content_post {
+  padding: 10px;
   position: relative;
   height: 400px;
   color: #fff;
@@ -74,7 +75,7 @@ div.content_post {
       font-size: 12px;
       background-color: black;
       border: 1px solid gray;
-      display: block;
+      display: none;
       box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
       border-radius: 3px;
       li {

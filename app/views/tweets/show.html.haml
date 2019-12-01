@@ -19,8 +19,8 @@
     .container
       - if current_user
         = form_for [@tweet, @comment] do |form|
-          = form.text_area :text, placeholder: "Comment", rows: "2"
-          = form.submit "SEND"
+          = form.text_area :text, placeholder: "Comment", rows: "2",class: "textbox"
+          = form.submit "SEND",class: "form__submit"
       - else
         %strong
           %p ※※※ コメントの投稿には新規登録/ログインが必要です ※※※

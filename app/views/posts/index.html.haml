@@ -17,7 +17,8 @@
             %img.hf.on{:alt => "TOUR", :src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/glo_tour_on.png", :style => "position: absolute; opacity: 0; left: 0px; top: 0px; z-index: 0;"}/
             %img.hf{:alt => "TOUR", :src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/glo_tour_off.png", :style => "opacity: 1;"}/
         %li.about
-          %a.about_btn{:href => ""}
+          %a.about_btn
+          =link_to "posts/about" do
             %img.hf.on{:alt => "ABOUT", :src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/glo_about_on.png", :style => "position: absolute; opacity: 0; left: 0px; top: 0px; z-index: 0;"}/
             %img.hf{:alt => "ABOUT", :src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/glo_about_off.png", :style => "opacity: 1;"}/
         %li.videos
