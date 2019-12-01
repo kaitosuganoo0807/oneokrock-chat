@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   resources :users, only: [:show, :edit, :update]
   get 'posts/music', to: 'posts#music'
   get 'posts/about', to: 'posts#about'
+  get 'posts/video', to: 'posts#video'
 end

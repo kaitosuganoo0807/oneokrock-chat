@@ -8,4 +8,7 @@ class PostsController < ApplicationController
 
   def about
   end
+
+  def video
+  end
 end

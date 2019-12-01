@@ -22,7 +22,8 @@
             %img.hf.on{:alt => "ABOUT", :src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/glo_about_on.png", :style => "position: absolute; opacity: 0; left: 0px; top: 0px; z-index: 0;"}/
             %img.hf{:alt => "ABOUT", :src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/glo_about_off.png", :style => "opacity: 1;"}/
         %li.videos
-          %a.videos_btn{:href => ""}
+          %a.videos_btn
+          =link_to "posts/video" do
             %img.hf.on{:alt => "VIDEOS", :src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/glo_videos_on.png", :style => "position: absolute; opacity: 0; left: 0px; top: 0px; z-index: 0;"}/
             %img.hf{:alt => "VIDEOS", :src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/glo_videos_off.png", :style => "opacity: 1;"}/
         %li.music

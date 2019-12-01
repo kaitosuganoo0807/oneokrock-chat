@@ -1,0 +1,13 @@
+.one_col {
+  padding: 0 30px;
+  #videos {
+    position: relative;
+    .list_info {
+      position: absolute;
+      font-size: 12px;
+      top: 0;
+      right: 0;
+      padding-top: 2px;
+    }
+  }
+}
