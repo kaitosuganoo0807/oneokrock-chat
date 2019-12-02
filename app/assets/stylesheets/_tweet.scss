@@ -7,6 +7,17 @@
   margin-bottom: 0;
   max-width: 750px;
   height: 800px;
+  animation-name:two_col;
+  animation-duration:2s; //アニメーション時間
+  animation-timing-function: ease-out; //アニメーションさせるイージング
+  animation-delay:0.01s; //アニメーション開始させる時間
+  animation-iteration-count:1; //繰り返し回数
+  animation-direction:normal; //往復処理をするかどうか
+  animation-fill-mode: forwards; //アニメーション後のスタイルをどうするか
+  @keyframes two_col {
+  0% {opacity: 0; transform: translate3d(0,20px,0);}
+  100% {opacity: 1; transform: translate3d(0,0,0);}
+  }
   .success {
     background-color: gray;
     text-align: center;

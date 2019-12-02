@@ -1,0 +1,59 @@
+#tour_list {
+  padding: 15px 0;
+  #t2764 {
+    margin-top: 15px;
+    padding: 14px 15px 0;
+    border: 1px solid #323232;
+    background: #000;
+    position: relative;
+    .live_header {
+      cursor: pointer;
+      padding-bottom: 11px;
+      .date {
+        font-size: 14px;
+        float: left;
+        color: #ffffff;
+        border-right: 1px dotted#323232;
+        padding-right: 15px;
+      }
+      .location {
+        font-size: 14px;
+        padding-left: 15px;
+        float: left;
+        color: #ffffff;
+      }
+      .title {
+        clear: both;
+        color: #9774af;
+        font-size: 18px;
+        font-style: italic;
+        text-align: left;
+      }
+      .arrow {
+        transition: opacity ease-out 200ms;
+        position: absolute;
+        top: 9px;
+        right: 9px;
+        cursor: pointer;
+        vertical-align: baseline;
+        .icon.drawer_arrow_off {
+          background: url(http://www.oneokrock.com/wp-content/themes/oor_pc/images/sprite/drawer_arrow_on.png);
+          width: 55px;
+          height: 55px;
+          display: inline-block;
+          vertical-align: bottom;
+          &:hover{
+            background: url(http://www.oneokrock.com/wp-content/themes/oor_pc/images/sprite/drawer_arrow_on.png);
+          }
+        }
+      }
+    }
+    .live_content {
+      transition: all ease-out 1300ms;
+      padding-top: 15px;
+      color: #ffffff;
+      text-align: left;
+      font-size: 12px;
+    }
+  }
+}

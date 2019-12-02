@@ -1,0 +1,58 @@
+.news_tab {
+  padding: 15px 0;
+  background: url(http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/border_left.png) no-repeat bottom center;
+  ul {
+    display: flex;
+    li:first-child {
+      padding-right: 10px;
+    }
+    li {
+      float: left;
+    }
+  }
+}
+.news_category {
+  padding: 30px 0;
+  .description_news {
+    text-align: left;
+    .date {
+      font-size: 12px;
+      color: #999999;
+      .icon.new {
+        background: url(http://www.oneokrock.com/wp-content/themes/oor_pc/images/sprite/new.png);
+        background-size: contain;
+        width: 33px;
+        height: 18px;
+        display: inline-block;
+      }
+    }
+    .title {
+      font-size: 14px;
+      padding-top: 5px;
+      text-decoration: none;
+      .w_a {
+        display: none;
+      }
+    }
+    .headline {
+      font-size: 12px;
+      padding-top: 22px;
+      color: gray;
+      .read_more {
+        font-size: 10px;
+        .ul_color_accent {
+          color: #9774af !important;
+        }
+      }
+    }
+  }
+}
+
+.headline {
+  font-size: 12px;
+  padding-top: 22px;
+  color: #999999;
+  .read_more {
+    font-size: 10px;
+  }
+}

@@ -11,4 +11,10 @@ class PostsController < ApplicationController
 
   def video
   end
+
+  def tour
+  end
+
+  def news
+  end
 end

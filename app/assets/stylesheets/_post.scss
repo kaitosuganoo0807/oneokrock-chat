@@ -52,6 +52,9 @@ body {
               transition: all ease-out 240ms;
               color: #ebebeb;
               text-decoration: none;
+              &:hover{
+                cursor: pointer;
+              }
             }
           }
 
@@ -185,6 +188,17 @@ body {
       padding-left: 30px;
       padding-right: 30px;
       display: flex;
+      animation-name:two_col;
+      animation-duration:2s; //アニメーション時間
+      animation-timing-function: ease-out; //アニメーションさせるイージング
+      animation-delay:0.01s; //アニメーション開始させる時間
+      animation-iteration-count:1; //繰り返し回数
+      animation-direction:normal; //往復処理をするかどうか
+      animation-fill-mode: forwards; //アニメーション後のスタイルをどうするか
+      @keyframes two_col {
+        0% {opacity: 0; transform: translate3d(0,20px,0);}
+        100% {opacity: 1; transform: translate3d(0,0,0);}
+      }
       .main_col {
         width: 570px;
         .topic_list li {
@@ -197,6 +211,7 @@ body {
           }
           .description {
             padding-left: 200px;
+            text-align: left;
             .date {
               font-size: 12px;
               color: #999999;
@@ -307,10 +322,16 @@ body {
       clear: both;
       text-align: center;
       padding: 75px 0 15px;
-      img {
-        vertical-align: bottom;
-        &:hover{
-          color: lighten(gray,10%);
+      .o {
+        scroll-behavior: smooth;
+      }
+      .o:link {
+        opacity: 1;
+        img {
+          vertical-align: bottom;
+          &:hover{
+            color: lighten(gray,10%);
+          }
         }
       }
     }
@@ -337,7 +358,11 @@ body {
 a {
   color: #ebebeb;
   text-decoration: none;
+  transition: all ease-out 240ms;
   // font-family: fantasy;
+  a:-webkit-any {
+    cursor: pointer;
+  }
   &:hover{
     color: lighten(gray,10%);
   }

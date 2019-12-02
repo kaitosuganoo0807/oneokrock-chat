@@ -9,11 +9,13 @@
             %img.hf.on{:alt => "HOME", :src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/glo_home_on.png", :style => "position: absolute; opacity: 0; left: 43px; top: 0px; z-index: 0;"}/
             %img.hf{:alt => "HOME", :src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/glo_home_off.png"}/
         %li.news
-          %a.news_btn{:href => ""}
+          %a.news_btn
+          =link_to "posts/news" do
             %img.hf.on{:alt => "NEWS", :src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/glo_news_on.png", :style => "position: absolute; opacity: 0; left: 180px; top: 0px; z-index: 0;"}/
             %img.hf{:alt => "NEWS", :src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/glo_news_off.png"}/
         %li.tour
-          %a.tour_btn{:href => ""}
+          %a.tour_btn
+          =link_to "posts/tour" do
             %img.hf.on{:alt => "TOUR", :src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/glo_tour_on.png", :style => "position: absolute; opacity: 0; left: 0px; top: 0px; z-index: 0;"}/
             %img.hf{:alt => "TOUR", :src => "http://www.oneokrock.com/wp-content/themes/oor_pc/images/common/glo_tour_off.png", :style => "opacity: 1;"}/
         %li.about
